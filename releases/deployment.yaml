@@ -4,7 +4,7 @@ metadata:
   name: your-ip
   namespace: flux-system
 spec:
-  image: ibnuislamy/your_ip
+  image: 050299/example-app
   interval: 30s
   secretRef:
     name: dockerhub-key
@@ -56,7 +56,7 @@ spec:
         - name: dockerhub-key
       containers:
         - name: your-ip
-          image: ibnuislamy/your_ip:1.0.2 # {"$imagepolicy": "flux-system:your-ip"}
+          image: 050299/example-app:1.0.1 # {"$imagepolicy": "flux-system:your-ip"}
           ports:
             - containerPort: 3000
           envFrom:
