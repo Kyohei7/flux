@@ -49,5 +49,5 @@ spec:
     push:
       branch: main
   update:
-    path: ./releases
+    path: ./release
     strategy: Setters
